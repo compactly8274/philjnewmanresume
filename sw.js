@@ -26,20 +26,20 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-8dc62a42757a434e5aa6.js"
+    "url": "webpack-runtime-d66c1af837878defc91a.js"
   },
   {
-    "url": "app-3cc228c3f5314107e7a2.js"
+    "url": "app-4bd37de0410d949bbb2e.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-ed8b4d2fa700d0e1c034.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "9555c69efecccb230d3b83d0fe4d9de4"
+    "revision": "f631271840d78ae7555546b2ebab1f9a"
   },
   {
-    "url": "styles.07ac1b0577fd89245866.css"
+    "url": "styles.01f8466cc3b142c46113.css"
   },
   {
     "url": "styles-d17e3551b5250156d0ca.js"
@@ -52,15 +52,15 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/404.html/page-data.json",
-    "revision": "6924a966f75a09721a048843a2872e1d"
+    "revision": "8b910fd652bfafaea283217d8d5dab9f"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "11de968c14d4ebdee7b15cbd3a3535b1"
+    "revision": "24868da0520eca11e41d3d993488db3d"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "4648b10155c4f93a1e071470f6cc23f8"
+    "revision": "593309adc7727cba63a21ef20cd2bf3a"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -82,7 +82,7 @@ const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
   return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      const offlineShell = `/philjnewman/offline-plugin-app-shell-fallback/index.html`
+      const offlineShell = `/philjnewmanresume/offline-plugin-app-shell-fallback/index.html`
       const cacheName = workbox.core.cacheNames.precache
 
       return caches.match(offlineShell, { cacheName }).then(cachedResponse => {
@@ -154,7 +154,7 @@ const messageApi = {
 
     pathnames = pathnames.map(({ pathname, includesPrefix }) => {
       if (!includesPrefix) {
-        return `/philjnewman${pathname}`
+        return `/philjnewmanresume${pathname}`
       } else {
         return pathname
       }
