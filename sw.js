@@ -26,20 +26,20 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-35ce0c2360101b4a05f8.js"
+    "url": "webpack-runtime-52cf0bca28d024eb0061.js"
   },
   {
-    "url": "app-0d4363f0791c4ed074cd.js"
+    "url": "app-0cdc77b5be8a3c6317cb.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-ed8b4d2fa700d0e1c034.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "2a18e94fe080b68129df074ca9e1dec5"
+    "revision": "5ccbeeb1f83f402a9b66de1985f3b97b"
   },
   {
-    "url": "styles.3b00bd78418bdf6e629c.css"
+    "url": "styles.436a5bb0a1eca2e01440.css"
   },
   {
     "url": "styles-d17e3551b5250156d0ca.js"
@@ -52,15 +52,11 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/404.html/page-data.json",
-    "revision": "a9fd15faa0469ce3802248ab0a7bfaa0"
-  },
-  {
-    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "8c23ac9ed1a17ac3cb91bf508bfadc75"
+    "revision": "cec5d91016a5968b042dfbf056490641"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "a061520e79e4e3c7d658bdd53351eaac"
+    "revision": "039d08ea81d2df8d83fbc48eec0dc00c"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -82,7 +78,7 @@ const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
   return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      const offlineShell = `/resume/offline-plugin-app-shell-fallback/index.html`
+      const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
       const cacheName = workbox.core.cacheNames.precache
 
       return caches.match(offlineShell, { cacheName }).then(cachedResponse => {
@@ -154,7 +150,7 @@ const messageApi = {
 
     pathnames = pathnames.map(({ pathname, includesPrefix }) => {
       if (!includesPrefix) {
-        return `/resume${pathname}`
+        return `${pathname}`
       } else {
         return pathname
       }
