@@ -19,7 +19,7 @@ const IndexPage = () => (
             <span className="text-primary">{config.lastName}</span>
           </h1>
           <div className="subheading mb-5">
-            {config.address} · {config.phone} ·
+            {config.address}  {config.phone} 
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div>
           <p className="lead mb-5">
@@ -112,24 +112,6 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
-			
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div className="resume-content">
-              <h3 className="mb-0">Territory Business Manager</h3>
-              <div className="subheading mb-3">STG Canada</div>
-              <p>
-				Maintain company relationship for over 250 stores, and visit them under 
-				a personal schedule to ensure vendor and customer satisfaction with our 
-				product. Activate retail specials and maintain both personal and corporate 
-				budgets to ensure profitability. Retain and expand distribution of products 
-				in stores. Launch products with programs tailored to vendor involvement and 
-				follow up to ensure consumer activation
-              </p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">Nov 2011 - June 2013</span>
-            </div>
-          </div>
       </section>
 
       <hr className="m-0" />
@@ -176,14 +158,17 @@ const IndexPage = () => (
 		  <p>
 				Fast learner. Very adept at analyzing a problem and applying
 				a solution.
-					
+		  </p>	
+		  <p>		
 				A dynamic array of knowledge in many facets. Able to utilize
 				that knowledge to see a unique perspective on situations.
-					
+		  </p>
+		  <p>
 				Customer service. Many years of experience and a friendly,
 				approachable demeanor that leads to a good repoire with 
 				clients and co-workers alike.
-					
+		  </p>	
+		  <p>	
 				Drive. A constant thirst for knowledge, and drive to improve
 				myself and my abilities. Always looking for ways to keep busy
 				and streamline future projects.
