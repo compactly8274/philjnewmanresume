@@ -26,20 +26,20 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-d7cecd7ac29a707ae194.js"
+    "url": "webpack-runtime-f8a1ad06e4dda8ee5702.js"
   },
   {
-    "url": "app-f70dc7fd92a634478433.js"
+    "url": "app-0d4363f0791c4ed074cd.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-ed8b4d2fa700d0e1c034.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "5e8e2b1c2ab3ab857f6eb6535134b327"
+    "revision": "694399f00904b02f68e6787ea9ad129c"
   },
   {
-    "url": "styles.cc6cf389540babd62988.css"
+    "url": "styles.3b00bd78418bdf6e629c.css"
   },
   {
     "url": "styles-d17e3551b5250156d0ca.js"
@@ -52,15 +52,15 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/404.html/page-data.json",
-    "revision": "ac8ddc86e72713c94e8d8d251dec2f4c"
+    "revision": "c56e28fe0454e6309025cb9132cb4919"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "b6e2cb17532150d1985317e8ac0beed7"
+    "revision": "5aaabe24dcf520c4d26dde899244a30e"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "d4d0d046fe23a3374234e5df33cb2002"
+    "revision": "944a0a8b6581a0f251474be452a236ce"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -82,7 +82,7 @@ const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
   return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      const offlineShell = `/gatsby-starter-resume/offline-plugin-app-shell-fallback/index.html`
+      const offlineShell = `/resume/offline-plugin-app-shell-fallback/index.html`
       const cacheName = workbox.core.cacheNames.precache
 
       return caches.match(offlineShell, { cacheName }).then(cachedResponse => {
@@ -154,7 +154,7 @@ const messageApi = {
 
     pathnames = pathnames.map(({ pathname, includesPrefix }) => {
       if (!includesPrefix) {
-        return `/gatsby-starter-resume${pathname}`
+        return `/resume${pathname}`
       } else {
         return pathname
       }
