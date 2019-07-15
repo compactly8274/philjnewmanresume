@@ -26,20 +26,20 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-52cf0bca28d024eb0061.js"
+    "url": "webpack-runtime-33d38b45497bddc014c5.js"
   },
   {
-    "url": "app-0cdc77b5be8a3c6317cb.js"
+    "url": "app-3cc228c3f5314107e7a2.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-ed8b4d2fa700d0e1c034.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "5ccbeeb1f83f402a9b66de1985f3b97b"
+    "revision": "583cec2fbea1120cff9edc756d936ad7"
   },
   {
-    "url": "styles.436a5bb0a1eca2e01440.css"
+    "url": "styles.3df7c7bae18b80189b09.css"
   },
   {
     "url": "styles-d17e3551b5250156d0ca.js"
@@ -52,11 +52,15 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/404.html/page-data.json",
-    "revision": "cec5d91016a5968b042dfbf056490641"
+    "revision": "965e66534be1d1ea7caae4801e5e3338"
+  },
+  {
+    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
+    "revision": "7a1145133f79483d219dc05a5b196b88"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "039d08ea81d2df8d83fbc48eec0dc00c"
+    "revision": "4648b10155c4f93a1e071470f6cc23f8"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -78,7 +82,7 @@ const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
   return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+      const offlineShell = `/philjnewman/offline-plugin-app-shell-fallback/index.html`
       const cacheName = workbox.core.cacheNames.precache
 
       return caches.match(offlineShell, { cacheName }).then(cachedResponse => {
@@ -150,7 +154,7 @@ const messageApi = {
 
     pathnames = pathnames.map(({ pathname, includesPrefix }) => {
       if (!includesPrefix) {
-        return `${pathname}`
+        return `/philjnewman${pathname}`
       } else {
         return pathname
       }
