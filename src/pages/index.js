@@ -67,8 +67,8 @@ const IndexPage = () => (
               <ul>
                 <li>
                   Deploy and maintain Dell servers and Windows Server environments
-                  (2008 through current), including Active Directory, DNS, and
-                  associated server roles
+                  (2008 through current), including Active Directory, Group Policy,
+                  DNS, DHCP, RD Gateway, and associated server roles
                 </li>
                 <li>
                   Administer Microsoft 365 tenants including Entra ID, Azure,
@@ -77,21 +77,25 @@ const IndexPage = () => (
                 <li>
                   Configure and maintain firewall and network security
                   infrastructure: SonicWall, Sophos, WatchGuard, MikroTik,
-                  Ubiquiti UniFi, and OPNsense; Cisco, Aruba, Sophos, and HPE
-                  switching
+                  Ubiquiti UniFi, and OPNsense; VPN setup and deployment; access
+                  point provisioning; Cisco, Aruba, Sophos, and HPE switching
                 </li>
                 <li>
-                  Lead Sophos Central administration including endpoint protection
-                  and email gateway; conduct vulnerability assessments using
-                  Vulscan
+                  Lead Sophos Central administration including endpoint protection,
+                  email gateway, and API integrations; conduct vulnerability
+                  assessments using Vulscan
                 </li>
                 <li>
-                  Manage client environments via ConnectWise PSA, ConnectWise
+                  Manage client environments via ConnectWise PSA, ConnectWire
                   Automate RMM, Datto Backup and RMM, and IT Glue
                 </li>
                 <li>
                   Administer access and privilege management tools including
                   AutoElevate, QuickPass, and Keeper (admin)
+                </li>
+                <li>
+                  Proficient in terminal and CLI workflows across Windows, macOS,
+                  and Linux environments
                 </li>
               </ul>
             </div>
@@ -211,26 +215,32 @@ const IndexPage = () => (
           <h2 className="mb-5">Skills</h2>
 
           <div className="subheading mb-3">Operating Systems</div>
-          <p>Windows 10/11 &middot; Windows Server 2008&ndash;2022 &middot; macOS &middot; Linux</p>
+          <p>
+            Windows 10/11 &middot; Windows Server 2008&ndash;2022 &middot;
+            macOS &middot; Linux &middot; Terminal &amp; CLI
+          </p>
 
           <div className="subheading mb-3">Networking &amp; Security</div>
           <p>
             SonicWall &middot; Sophos Firewall &middot; WatchGuard &middot;
             MikroTik &middot; Ubiquiti UniFi &middot; OPNsense &middot; Cisco
-            &middot; Aruba &middot; HPE Switching &middot; DNS
+            &middot; Aruba &middot; HPE Switching &middot; VPN Deployment
+            &middot; Access Point Setup &amp; Provisioning &middot; DHCP
+            &middot; DNS &middot; RD Gateway
           </p>
 
           <div className="subheading mb-3">Microsoft &amp; Cloud</div>
           <p>
             Microsoft 365 Administration &middot; Entra ID &middot; Azure
-            &middot; SharePoint &middot; Teams &middot; Microsoft Licensing
+            &middot; SharePoint &middot; Teams &middot; Group Policy &middot;
+            Microsoft Licensing
           </p>
 
           <div className="subheading mb-3">Security &amp; Endpoint</div>
           <p>
             Sophos Central &middot; Sophos Endpoint &middot; Sophos Email
-            Gateway &middot; Vulscan &middot; AutoElevate &middot; QuickPass
-            &middot; Keeper (Admin)
+            Gateway &middot; Sophos API &middot; Vulscan &middot; AutoElevate
+            &middot; QuickPass &middot; Keeper (Admin)
           </p>
 
           <div className="subheading mb-3">MSP Platforms</div>
@@ -244,6 +254,9 @@ const IndexPage = () => (
             Dell PowerEdge Servers &middot; iDRAC &middot; Workstation &amp;
             laptop diagnostics and repair
           </p>
+
+          <div className="subheading mb-3">Home Lab</div>
+          <p>Ubuntu Server &middot; Unraid &middot; TrueNAS</p>
         </div>
       </section>
 
@@ -256,13 +269,13 @@ const IndexPage = () => (
         <div className="w-100">
           <h2 className="mb-5">Interests</h2>
           <p>
-            Outside of work I maintain a personal home lab running 5 servers — a
-            hands-on environment I use to test configurations, explore new
-            technologies, and deepen my understanding of virtualization,
+            Outside of work I maintain a personal home lab running 5 servers
+            &mdash; a hands-on environment I use to test configurations, explore
+            new technologies, and deepen my understanding of virtualization,
             networking, and server administration.
           </p>
           <p className="mb-0">
-            I enjoy spending time outdoors — golfing, hiking, kayaking,
+            I enjoy spending time outdoors &mdash; golfing, hiking, kayaking,
             longboarding, and swimming. Indoors, I'm an avid film fan with a
             background in media production. I also play guitar and piano, enjoy
             reading, and like building things in my workshop.
