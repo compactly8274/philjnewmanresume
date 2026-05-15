@@ -1,0 +1,1 @@
+(self.webpackChunkgatsby_starter_resume=self.webpackChunkgatsby_starter_resume||[]).push([[522],{8522:function(){}}]);
