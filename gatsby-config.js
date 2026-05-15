@@ -6,7 +6,6 @@ module.exports = {
     title: config.siteTitle,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -16,7 +15,7 @@ module.exports = {
         background_color: config.manifestBackgroundColor,
         theme_color: config.manifestThemeColor,
         display: config.manifestDisplay,
-        icon: config.manifestIcon, // This path is relative to the root of the site.
+        icon: config.manifestIcon,
       },
     },
     'gatsby-plugin-sass',
