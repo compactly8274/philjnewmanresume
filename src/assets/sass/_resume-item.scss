@@ -2,13 +2,37 @@ section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
   max-width: 75rem;
+
   .resume-item {
+    position: relative;
+    padding-left: 1.75rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background-color: $primary;
+      box-shadow: 0 0 0 3px rgba($primary, 0.15);
+    }
+
     .resume-content {}
+
     .resume-date {
       min-width: none;
+
+      .text-primary {
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
     }
   }
 }
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
@@ -19,6 +43,7 @@ section.resume-section {
     }
   }
 }
+
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
