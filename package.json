@@ -11,6 +11,7 @@
     "email": "anubhav.srivastava00@gmail.com"
   },
   "dependencies": {
+    "ajv": "^8.0.0",
     "gatsby": "^5.0.0",
     "gatsby-plugin-manifest": "^5.0.0",
     "gatsby-plugin-offline": "^6.0.0",
