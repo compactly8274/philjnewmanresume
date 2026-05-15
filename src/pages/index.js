@@ -86,7 +86,7 @@ const IndexPage = () => (
                   assessments using Vulscan
                 </li>
                 <li>
-                  Manage client environments via ConnectWise PSA, ConnectWire
+                  Manage client environments via ConnectWise PSA, ConnectWise
                   Automate RMM, Datto Backup and RMM, and IT Glue
                 </li>
                 <li>
@@ -268,17 +268,12 @@ const IndexPage = () => (
       >
         <div className="w-100">
           <h2 className="mb-5">Interests</h2>
-          <p>
+          <p className="mb-0">
             Outside of work I maintain a personal home lab running 5 servers
             &mdash; a hands-on environment I use to test configurations, explore
-            new technologies, and deepen my understanding of virtualization,
-            networking, and server administration.
-          </p>
-          <p className="mb-0">
-            I enjoy spending time outdoors &mdash; golfing, hiking, kayaking,
-            longboarding, and swimming. Indoors, I'm an avid film fan with a
-            background in media production. I also play guitar and piano, enjoy
-            reading, and like building things in my workshop.
+            new technologies, and stay current with virtualization, networking,
+            and server administration. I also enjoy the outdoors, film, music,
+            and building things.
           </p>
         </div>
       </section>
@@ -303,18 +298,6 @@ const IndexPage = () => (
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
               Level II &mdash; Ultrasonic Certification
-            </li>
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>
-              2&times; Highest Extended Warranty Salesman of the Month
-            </li>
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>
-              Fastest Promoted to Chief Operator
-            </li>
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>
-              Perfect Score &mdash; CN Rules Course
             </li>
           </ul>
         </div>
