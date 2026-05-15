@@ -24,8 +24,12 @@ const IndexPage = () => (
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div>
           <p className="lead mb-5">
-            Driven IT Professional with high desire to grow, learn and maximize
-            potential. CompTIA A+ Certified
+            Senior IT Technician with over 6 years of managed service provider
+            experience supporting diverse client environments across Windows,
+            macOS, and Linux. Specializes in network security, Microsoft 365
+            administration, and Windows Server infrastructure. CompTIA A+ and
+            Network+ certified. Maintains a personal 5-server home lab for
+            continuous learning and experimentation.
           </p>
           <div className="social-icons">
             {config.socialLinks.map(social => {
@@ -51,17 +55,64 @@ const IndexPage = () => (
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Computer Technician/Sales Associate</h3>
+              <h3 className="mb-0">Senior Technician</h3>
+              <div className="subheading mb-3">Empyrion Technologies Inc.</div>
+              <p>
+                Progressed from Technician to Senior Technician at a managed
+                service provider supporting multi-client environments. Current
+                focus is security administration, with broad experience spanning
+                break-fix support, system deployment, network infrastructure, and
+                enterprise integrations.
+              </p>
+              <ul>
+                <li>
+                  Deploy and maintain Dell servers and Windows Server environments
+                  (2008 through current), including Active Directory, DNS, and
+                  associated server roles
+                </li>
+                <li>
+                  Administer Microsoft 365 tenants including Entra ID, Azure,
+                  SharePoint, Teams, and licensing
+                </li>
+                <li>
+                  Configure and maintain firewall and network security
+                  infrastructure: SonicWall, Sophos, WatchGuard, MikroTik,
+                  Ubiquiti UniFi, and OPNsense; Cisco, Aruba, Sophos, and HPE
+                  switching
+                </li>
+                <li>
+                  Lead Sophos Central administration including endpoint protection
+                  and email gateway; conduct vulnerability assessments using
+                  Vulscan
+                </li>
+                <li>
+                  Manage client environments via ConnectWise PSA, ConnectWise
+                  Automate RMM, Datto Backup and RMM, and IT Glue
+                </li>
+                <li>
+                  Administer access and privilege management tools including
+                  AutoElevate, QuickPass, and Keeper (admin)
+                </li>
+              </ul>
+            </div>
+            <div className="resume-date text-md-right">
+              <span className="text-primary">December 2019 - Present</span>
+            </div>
+          </div>
+
+          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div className="resume-content">
+              <h3 className="mb-0">Computer Technician / Sales Associate</h3>
               <div className="subheading mb-3">Mike's Computer Shop</div>
               <p>
-                Repair, build and optimize computer systems. Recommend solutions
-                for customers and ensure full satisfaction. Use my diverse
-                knowledge of computers and their components to quickly and
-                efficiently find a path back to full functionality.
+                Diagnosed and repaired customer computer systems including
+                hardware replacements, software troubleshooting, and performance
+                optimization. Advised customers on hardware and software solutions
+                tailored to their needs.
               </p>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">March 2019 - Present</span>
+              <span className="text-primary">March 2019 - December 2019</span>
             </div>
           </div>
 
@@ -70,9 +121,9 @@ const IndexPage = () => (
               <h3 className="mb-0">Farm Hand</h3>
               <div className="subheading mb-3">Johnson Farms</div>
               <p>
-                Responsible for the continuing operation of the barn. Includes
-                assisting barn owner, daily tasks, repairing, troubleshooting,
-                building and cleaning of barn machinery.
+                Maintained daily barn operations including equipment
+                troubleshooting, repair, and upkeep. Managed mechanical and
+                operational tasks across a working farm environment.
               </p>
             </div>
             <div className="resume-date text-md-right">
@@ -85,12 +136,12 @@ const IndexPage = () => (
               <h3 className="mb-0">Chief Operator</h3>
               <div className="subheading mb-3">Herzog Services of Canada</div>
               <p>
-                Ultrasonic testing of railroad tracks. Responsible for operation
-                and maintenance of the testing machinery, reading the high-speed
-                ultrasonic readout in real time, determining defects in the rail
-                with expertise, and managing exceptional relationships with direct
-                and higher level railroad employees. Obtained Ultrasonic Level II
-                Training and Certificate.
+                Performed ultrasonic testing of railroad tracks. Responsible for
+                operation and maintenance of testing machinery, reading
+                high-speed ultrasonic readouts in real time, and identifying rail
+                defects with precision. Built and maintained strong professional
+                relationships with railroad personnel at all levels. Obtained
+                Ultrasonic Level II certification.
               </p>
             </div>
             <div className="resume-date text-md-right">
@@ -103,10 +154,10 @@ const IndexPage = () => (
               <h3 className="mb-0">Sales Associate</h3>
               <div className="subheading mb-3">Kia Canada</div>
               <p>
-                Maintain relationships with possible, existing and future
-                customers. Create new business opportunities and seek out
-                possible clients while providing insight into features, benefits
-                and options of the models.
+                Built and maintained relationships with prospective, existing,
+                and future customers. Generated new business opportunities and
+                provided clients with detailed insight into vehicle features,
+                benefits, and options.
               </p>
             </div>
             <div className="resume-date text-md-right">
@@ -158,23 +209,40 @@ const IndexPage = () => (
       >
         <div className="w-100">
           <h2 className="mb-5">Skills</h2>
+
+          <div className="subheading mb-3">Operating Systems</div>
+          <p>Windows 10/11 &middot; Windows Server 2008&ndash;2022 &middot; macOS &middot; Linux</p>
+
+          <div className="subheading mb-3">Networking &amp; Security</div>
           <p>
-            Fast learner. Very adept at analyzing a problem and applying a
-            solution.
+            SonicWall &middot; Sophos Firewall &middot; WatchGuard &middot;
+            MikroTik &middot; Ubiquiti UniFi &middot; OPNsense &middot; Cisco
+            &middot; Aruba &middot; HPE Switching &middot; DNS
           </p>
+
+          <div className="subheading mb-3">Microsoft &amp; Cloud</div>
           <p>
-            A dynamic array of knowledge in many facets. Able to utilize that
-            knowledge to see a unique perspective on situations.
+            Microsoft 365 Administration &middot; Entra ID &middot; Azure
+            &middot; SharePoint &middot; Teams &middot; Microsoft Licensing
           </p>
+
+          <div className="subheading mb-3">Security &amp; Endpoint</div>
           <p>
-            Customer service. Many years of experience and a friendly,
-            approachable demeanor that leads to a good repoire with clients and
-            co-workers alike.
+            Sophos Central &middot; Sophos Endpoint &middot; Sophos Email
+            Gateway &middot; Vulscan &middot; AutoElevate &middot; QuickPass
+            &middot; Keeper (Admin)
           </p>
+
+          <div className="subheading mb-3">MSP Platforms</div>
           <p>
-            Drive. A constant thirst for knowledge, and drive to improve myself
-            and my abilities. Always looking for ways to keep busy and streamline
-            future projects.
+            ConnectWise PSA &middot; ConnectWise Automate &middot; Datto Backup
+            &amp; RMM &middot; IT Glue
+          </p>
+
+          <div className="subheading mb-3">Hardware</div>
+          <p>
+            Dell PowerEdge Servers &middot; iDRAC &middot; Workstation &amp;
+            laptop diagnostics and repair
           </p>
         </div>
       </section>
@@ -188,17 +256,16 @@ const IndexPage = () => (
         <div className="w-100">
           <h2 className="mb-5">Interests</h2>
           <p>
-            Apart from being a computer technician, I also like to spend time
-            outside. Whether it's golfing, hiking, kayaking, longboarding, or
-            swimming, I like to take in all that nature has to offer.
+            Outside of work I maintain a personal home lab running 5 servers — a
+            hands-on environment I use to test configurations, explore new
+            technologies, and deepen my understanding of virtualization,
+            networking, and server administration.
           </p>
           <p className="mb-0">
-            While inside, I am a movie buff. Coming from a world of media I like
-            to watch, study and discuss films. I also play guitar, piano, and
-            sing. I enjoy reading, especially if I'm learning something new, and
-            building stuff with my hands in my workshop. I also enjoy working on
-            my own computers and looking into new programs that can help with my
-            workflow.
+            I enjoy spending time outdoors — golfing, hiking, kayaking,
+            longboarding, and swimming. Indoors, I'm an avid film fan with a
+            background in media production. I also play guitar and piano, enjoy
+            reading, and like building things in my workshop.
           </p>
         </div>
       </section>
@@ -214,15 +281,19 @@ const IndexPage = () => (
           <ul className="fa-ul mb-0">
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
-              CompTIA A+ Certification - with High Score
+              CompTIA A+ Certification &mdash; with High Score
             </li>
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
-              Level II - Ultrasonic Certification
+              CompTIA Network+ Certification
             </li>
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
-              2x Highest Extended Warranty Salesman of the Month
+              Level II &mdash; Ultrasonic Certification
+            </li>
+            <li>
+              <i className="fa-li fa fa-trophy text-warning"></i>
+              2&times; Highest Extended Warranty Salesman of the Month
             </li>
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
@@ -230,9 +301,8 @@ const IndexPage = () => (
             </li>
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
-              Perfect Score - CN Rules Course
+              Perfect Score &mdash; CN Rules Course
             </li>
-            <li>Working on CCNA Certification</li>
           </ul>
         </div>
       </section>
